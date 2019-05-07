@@ -1,0 +1,67 @@
+{
+  "name": "react-favic",
+  "version": "1.0.0",
+  "description": "Add Favicons to the head of your React app",
+  "main": "dist/react-favic.js",
+  "umd:main": "dist/react-favic.umd.js",
+  "module": "dist/react-favic.m.js",
+  "source": "src/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "postversion": "npm publish",
+    "preversion": "npm run test",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "lint": "standard --fix",
+    "coverage": "jest --coverage",
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaanduplessis/react-favic.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "favicon",
+    "head",
+    "helmet",
+    "icon",
+    "ico"
+  ],
+  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/react-favic/issues"
+  },
+  "homepage": "https://github.com/tiaanduplessis/react-favic#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-polyfill": "^6.26.0",
+    "formik": "^1.5.4",
+    "jest": "^24.8.0",
+    "microbundle": "^0.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-testing-library": "^7.0.0",
+    "standard": "^12.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": "dist",
+    "env": {
+      "jest": true,
+      "browser": true
+    }
+  }
+}
