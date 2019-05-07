@@ -19,7 +19,7 @@
 
 ## About
 
-Little React component to add multiple meta tags for different sized headers to your app's document `head`.
+Little React component to add multiple meta tags for different sized favicons to your app's document `head`.
 
 ## Usage
 
